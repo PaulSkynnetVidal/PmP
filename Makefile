@@ -5,7 +5,7 @@
 ## Login   <vidal_p@epitech.net>
 ## 
 ## Started on  Thu Jul 17 09:27:41 2014 paul vidal
-## Last update Thu Jul 17 18:25:13 2014 paul vidal
+## Last update Fri Jul 18 06:28:46 2014 paul vidal
 ##
 
 CC		= gcc
@@ -21,10 +21,10 @@ INCLUDE_D	= include
 SRC_F		= main.c		\
 		  str.c			\
 		  number.c		\
-		  parser.c		\
 		  put_pxl.c		\
 		  mlx_fct.c		\
-		  triangle.c
+		  triangle.c		\
+		  main2.c		
 
 SRCS		= $(addprefix $(SRC_D)/, $(SRC_F))
 

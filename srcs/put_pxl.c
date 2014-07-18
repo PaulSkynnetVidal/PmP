@@ -5,7 +5,7 @@
 ** Login   <vidal_p@epitech.net>
 ** 
 ** Started on  Thu Jul 17 09:31:42 2014 paul vidal
-** Last update Thu Jul 17 17:42:14 2014 paul vidal
+** Last update Thu Jul 17 20:56:59 2014 paul vidal
 */
 
 #include "square.h"
@@ -33,7 +33,7 @@ void	draw_square(t_square *square, int x, int y, unsigned int color)
   x_end = x + square->sqr_size / 2;
   y_end = y + square->sqr_size / 2;
   x = x - square->sqr_size / 2;
-  while (x < (x_end - (square->sqr_size - 10)))
+  while (x < (x_end - (square->sqr_size - 2)))
     {
       save = y - square->sqr_size / 2;
       while (save < y_end)
@@ -57,7 +57,7 @@ void	draw_square1(t_square *square, int x, int y, unsigned int color)
   while (x < x_end)
     {
       save = y - square->sqr_size / 2;
-      while (save < (y_end - (square->sqr_size - 10)))
+      while (save < (y_end - (square->sqr_size - 2)))
 	{
 	  pxl(square, x, save, color);
 	  ++save;
@@ -77,7 +77,7 @@ void	draw_square2(t_square *square, int x, int y, unsigned int color)
   x = x - square->sqr_size / 2;
   while (x < x_end)
     {
-      save = y + square->sqr_size / 3;
+      save = y + square->sqr_size / 2.1;
       while (save < y_end)
 	{
 	  pxl(square, x, save, color);
@@ -95,7 +95,7 @@ void	draw_square3(t_square *square, int x, int y, unsigned int color)
 
   x_end = x + square->sqr_size / 2;
   y_end = y + square->sqr_size / 2;
-  x = x + square->sqr_size / 3;
+  x = x + square->sqr_size / 2.1;
   while (x < x_end)
     {
       save = y - square->sqr_size / 2;
